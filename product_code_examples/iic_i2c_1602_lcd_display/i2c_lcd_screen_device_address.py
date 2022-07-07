@@ -1,7 +1,7 @@
 import machine
 
-sdaPin = machine.Pin(0)
-sclPin = machine.Pin(1)
+sdaPin = machine.Pin(16)
+sclPin = machine.Pin(17)
 i2c = machine.I2C(0, sda=sdaPin, scl=sclPin, freq=400000)
 
 devices = i2c.scan()
